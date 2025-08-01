@@ -1,0 +1,197 @@
+/* Basic Reset & Box-Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Section */
+.main-header {
+    display: flex; /* Uses Flexbox for horizontal arrangement */
+    justify-content: space-between; /* Pushes items to opposite ends */
+    align-items: center; /* Vertically centers items */
+    background-color: #293241; /* Dark blue-grey */
+    color: #E0FBFC; /* Light blue */
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.site-title {
+    font-size: 2.5em; /* Adjusted font size */
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds text shadow */
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+}
+
+.search-container input[type="search"] {
+    padding: 8px 12px;
+    border: 1px solid #98C1D9; /* Light blue border */
+    border-radius: 5px; /* Rounded borders */
+    font-size: 1em;
+    outline: none;
+    background-color: #E0FBFC;
+    color: #293241;
+}
+
+.search-container button {
+    padding: 8px 15px;
+    background-color: #EE6C4D; /* Orange-red accent color */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded borders */
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+.search-container button:hover {
+    background-color: #d8583c; /* Slightly darker on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px; /* Rounded borders for main content area */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Banner Section */
+.banner-section {
+    margin-bottom: 30px;
+    overflow: hidden; /* Ensures image doesn't overflow container */
+    border-radius: 8px; /* Matches main content border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner-image {
+    width: 100%; /* Makes image responsive to container width */
+    height: auto;
+    display: block; /* Removes extra space below image */
+    object-fit: cover; /* Crops image nicely within its space if aspect ratio changes */
+    opacity: 0.9; /* Slightly faded banner */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+.banner-image:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #EE6C4D; /* Orange-red accent line */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.welcome-section h2 {
+    color: #3D5A80; /* Dark blue */
+    margin-bottom: 15px;
+    font-size: 2.2em;
+}
+
+.welcome-section p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Image Gallery Section */
+.gallery-section {
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.gallery-section h3 {
+    text-align: center;
+    color: #3D5A80;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+.image-gallery {
+    display: grid; /* Uses CSS Grid for a robust responsive layout */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between gallery items */
+    justify-content: center; /* Centers items if they don't fill the grid */
+}
+
+.gallery-item {
+    position: relative; /* Container for absolute positioning of caption */
+    height: 250px; /* Fixed height for gallery items */
+    background-size: cover; /* Ensures background image covers the item */
+    background-position: center; /* Centers the background image */
+    border-radius: 8px; /* Rounded corners for gallery items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Hides content outside rounded borders */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    cursor: pointer;
+}
+
+/* Example background images for gallery items */
+.image-gallery .gallery-item:nth-child(1) {
+    background-image: url('https://www.shutterstock.com/image-photo/summer-beach-hainan-island-china-600nw-2309297421.jpg');
+}
+.image-gallery .gallery-item:nth-child(2) {
+    background-image: url('https://i.ytimg.com/vi/lIQrgUV8wAE/maxresdefault.jpg');
+}
+.image-gallery .gallery-item:nth-child(3) {
+    background-image: url('https://media.istockphoto.com/id/491990549/photo/ancient-chinese-architecture.jpg?s=612x612&w=0&k=20&c=F-9PIEWRZi1BpSpVBvssZvul79ynm6Aa0LJCMFMgXXg=');
+}
+.image-gallery .gallery-item:nth-child(4) {
+    background-image: url('https://www.abctoursdubai.com/media/catalog/product/cache/c2a9480551a358f0af80be53b80e9590/d/e/desert-safari-with-atv-ride_002_.jpg');
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Scales up slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
+.caption-box {
+    position: absolute; /* Positions caption relative to gallery-item */
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Positioning for caption boxes */
+.caption-box.bottom {
+    bottom: 0;
+    left: 0;
+}
+
+.caption-box.top {
+    top: 0;
+    left: 0;
+}
+
+.caption-box.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the caption box horizontally and vertically */
+    border-radius: 5px; /* Slightly rounded corners for central caption */
+    width: 80%; /* Adjust width for centered caption */
+}

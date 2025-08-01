@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Adventures - Your Dream Travel Destination</title>
+    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="site-title">Wanderlust Adventures</h1>
+        <div class="search-container">
+            <input type="search" placeholder="Search destinations...">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner-section">
+            <img src="https://images.ctfassets.net/9mqyb8metqsu/5D2yfEScVMQjMyKRvpk61L/9561b0270c906238db0e5c92abd3ae46/Zhangjiajie_National_Forest_Park-min.webp" alt="Beautiful travel destination banner" class="banner-image">
+        </section>
+
+        <section class="welcome-section">
+            <h2>Welcome to Wanderlust Adventures!</h2>
+            <p>Your journey begins here. Discover breathtaking destinations, find curated travel packages, and book your next unforgettable adventure with ease. Whether you dream of exotic beaches, majestic mountains, or vibrant cityscapes, we have the perfect escape for you.</p>
+        </section>
+
+        <section class="gallery-section">
+            <h3>Popular Destinations</h3>
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <div class="caption-box bottom">
+                        <h4>Paradise Beach</h4>
+                        <p>Relax and unwind</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="caption-box top">
+                        <h4>Mountain Trails</h4>
+                        <p>Hike and explore</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="caption-box center">
+                        <h4>Historic City</h4>
+                        <p>Culture and sights</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="caption-box bottom">
+                        <h4>Desert Safari</h4>
+                        <p>Adventure awaits</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h3>Why Book With Us?</h3>
+            <div class="content-block">
+                <div class="content-image">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/026/704/761/small_2x/landmark-of-the-great-wall-of-china-in-beijing-for-holiday-destination-at-sunrise-photo.jpg">
+                </div>
+                <div class="content-text">
+                    <h4>Experienced Local Guides</h4>
+                    <p>Our tours are led by passionate and knowledgeable local guides who bring each destination to life, offering insights and experiences you won't find anywhere else. They handle all the logistics so you can focus on soaking in the culture and beauty.</p>
+                </div>
+            </div>
+            <div class="content-block reverse">
+                <div class="content-image">
+                    <img src="https://media.istockphoto.com/id/180638887/photo/beautiful-shanghai-yuyuan-garden-at-night.jpg?s=612x612&w=0&k=20&c=QZaK9sg6a9AavYnfMH38T3Heg9rV8nV3DSMUGO_JRn8=">
+                </div>
+                <div class="content-text">
+                    <h4>Tailored Travel Experiences</h4>
+                    <p>We believe every traveler is unique. That's why we offer fully customizable packages, allowing you to fine-tune your itinerary, accommodations, and activities to perfectly match your preferences and budget.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; <span id="currentYear"></span> Wanderlust Adventures. All Rights Reserved. </p>
+        <p>Contact Us | Privacy Policy | Terms of Service</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
